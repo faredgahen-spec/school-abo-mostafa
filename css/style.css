@@ -1,0 +1,104 @@
+/* Global CSS Styles for Academic Portal */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --primary: #00236f;
+  --primary-container: #1e3a8a;
+  --secondary: #006398;
+  --tertiary: #004a31;
+  --tertiary-fixed: #6ffbbe;
+  --surface: #f7f9fb;
+  --on-surface: #191c1e;
+  --outline: #757682;
+  --error: #ba1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f7f9fb;
+  color: #191c1e;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, .font-headline {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Hide default spinners in numeric inputs */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Custom transitions */
+.fade-in {
+  animation: fadeIn 0.35s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Toast notifications */
+.toast-notice {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hide bottom navigation bar completely */
+nav, .bottom-nav, [data-active-classes] {
+  display: none !important;
+}
+
+/* Active navigation item styling */
+.nav-link.active {
+  color: #00236f !important;
+  font-weight: 700;
+  background-color: #e6e8ea;
+  border-radius: 0.75rem;
+}
+
+/* Print Styles for Official School Certificate */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+  }
+
+  header, nav, footer, #lookup-form, #submit-btn, .no-print, button {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  #result-view {
+    display: block !important;
+    padding: 20px;
+    border: 2px solid #00236f;
+    border-radius: 8px;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>بوابة الدخول الموحدة | مدرسة أبو مصطفى الثانوية المشتركة</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00236f",
+            "on-primary": "#ffffff",
+            "primary-container": "#1e3a8a",
+            "on-primary-container": "#90a8ff",
+            "primary-fixed": "#dce1ff",
+            "primary-fixed-dim": "#b6c4ff",
+            "on-primary-fixed": "#00164e",
+            "on-primary-fixed-variant": "#264191",
+            "secondary": "#006398",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#5bb8fe",
+            "on-secondary-container": "#00476e",
+            "secondary-fixed": "#cce5ff",
+            "secondary-fixed-dim": "#93ccff",
+            "tertiary": "#00311f",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#004a31",
+            "on-tertiary-container": "#27c38a",
+            "tertiary-fixed": "#6ffbbe",
+            "tertiary-fixed-dim": "#4edea3",
+            "surface": "#f7f9fb",
+            "on-surface": "#191c1e",
+            "surface-dim": "#d8dadc",
+            "surface-bright": "#f7f9fb",
+            "surface-variant": "#e0e3e5",
+            "on-surface-variant": "#444651",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f4f6",
+            "surface-container": "#eceef0",
+            "surface-container-high": "#e6e8ea",
+            "surface-container-highest": "#e0e3e5",
+            "outline": "#757682",
+            "outline-variant": "#c5c5d3",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a"
+          },
+          spacing: {
+            "margin": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "headline": ["Cairo", "sans-serif"],
+            "body": ["Tajawal", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-16 px-margin flex items-center justify-between gap-space-sm">
+      <div class="flex items-center gap-space-sm min-w-0">
+        <img alt="شعار المدرسة" class="w-9 h-9 rounded-full object-cover flex-shrink-0 border border-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX9Ga7lFmfccPIQIyeYhPY0jCjCjx5nyLJlk-xTJwBeMqdWnH9h4tgI0uUu4SR7uB5wGNJ5eaKYBATdwmlWuIZkNe1XuF8upHSWaX4SSJISXQGzRdyEVDvAfTHqckj9KvADp7e8ZIiBNoNAC_4SX2nVqAjidtS78cE6z4iSX-KEcwitouAGXVDe7gGZdp8q5qZBsnPiiHpYy274aeqhKpFJY6Z4ZSkCrcKEBqAIm87"/>
+        <div class="flex flex-col min-w-0 text-right">
+          <span class="font-headline font-bold text-sm text-primary truncate leading-none mb-0.5">مدرسة أبو مصطفى الثانوية المشتركة</span>
+          <span class="text-xs text-on-surface-variant truncate">بوابة النتائج والدرجات المعتمدة</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-space-xs flex-shrink-0">
+        <span class="text-xs text-secondary bg-surface-container-high px-2 py-1 rounded font-bold">بوابة الدخول الموحدة</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col relative w-full pt-20 pb-10 bg-surface px-margin max-w-xl mx-auto">
+    <div class="flex flex-col w-full">
+      
+      <!-- Welcome & Institutional Crest Card -->
+      <section class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-md mb-space-md text-center flex flex-col items-center relative overflow-hidden border border-surface-container">
+        <div class="absolute -top-12 -left-12 w-36 h-36 bg-secondary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-primary-fixed/40 rounded-full blur-xl pointer-events-none"></div>
+        
+        <!-- Official Badge -->
+        <div class="inline-flex items-center gap-1.5 bg-surface-container-high px-3 py-1 rounded-full mb-space-sm text-secondary">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+          <span class="text-xs font-bold text-on-surface">العام الدراسي 2024 / 2025</span>
+        </div>
+        
+        <!-- School Emblem -->
+        <div class="relative w-20 h-20 mb-space-sm rounded-full p-1 bg-surface-container shadow-sm flex items-center justify-center">
+          <img alt="شعار مدرسة أبو مصطفى الثانوية المشتركة" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX9Ga7lFmfccPIQIyeYhPY0jCjCjx5nyLJlk-xTJwBeMqdWnH9h4tgI0uUu4SR7uB5wGNJ5eaKYBATdwmlWuIZkNe1XuF8upHSWaX4SSJISXQGzRdyEVDvAfTHqckj9KvADp7e8ZIiBNoNAC_4SX2nVqAjidtS78cE6z4iSX-KEcwitouAGXVDe7gGZdp8q5qZBsnPiiHpYy274aeqhKpFJY6Z4ZSkCrcKEBqAIm87"/>
+        </div>
+        
+        <!-- Title & Greeting -->
+        <h1 class="font-headline font-bold text-xl text-primary mb-1">
+          مدرسة أبو مصطفى الثانوية المشتركة
+        </h1>
+        <p class="text-sm text-on-surface-variant max-w-sm">
+          مرحباً بكم في البوابة الإلكترونية المعتمدة للاستعلام عن النتائج وإدارة منظومة الدرجات
+        </p>
+        
+        <!-- Quick Stats Ribbon -->
+        <div class="grid grid-cols-2 gap-space-sm w-full mt-space-md bg-surface-container-low rounded-xl p-space-sm border border-surface-container">
+          <div class="flex flex-col items-center">
+            <span class="text-xs text-outline font-medium">المرحلة التعليمية</span>
+            <span class="font-headline text-sm text-primary font-bold">الصف الأول الثانوي</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="text-xs text-outline font-medium">حالة الاعتماد</span>
+            <span class="font-headline text-sm text-tertiary-container font-bold flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-on-tertiary-container inline-block"></span>
+              النتائج متاحة رسمياً
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Role Selection Header -->
+      <div class="flex items-center justify-between px-space-xs mb-space-sm">
+        <div class="flex items-center gap-space-xs">
+          <span class="material-symbols-outlined text-primary text-lg">person_pin</span>
+          <h2 class="font-headline font-bold text-base text-primary">حدد صفتك للمتابعة</h2>
+        </div>
+        <span class="text-xs text-outline">بوابة الدخول الموحدة</span>
+      </div>
+
+      <!-- Role Cards Container -->
+      <div class="flex flex-col gap-space-md w-full mb-space-lg">
+        
+        <!-- Card 1: Student / Parent Gateway -->
+        <article class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-md flex flex-col justify-between transition-all duration-200 hover:shadow-md relative overflow-hidden border border-surface-container group">
+          <div class="absolute top-0 right-0 w-2 h-full bg-secondary"></div>
+          
+          <div class="flex items-start gap-space-md mb-space-md">
+            <div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center shrink-0 text-secondary">
+              <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">school</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded-full font-bold">بوابة عامة</span>
+                <span class="material-symbols-outlined text-outline text-sm">arrow_back</span>
+              </div>
+              <h3 class="font-headline font-bold text-lg text-primary">بوابة الطالب وأولياء الأمور</h3>
+              <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                الاستعلام الفوري والمباشر عن نتيجة امتحانات الصف الأول الثانوي برقم الجلوس والاطلاع على شهادة الدرجات المعتمدة وطباعتها.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Benefits Tags -->
+          <div class="flex flex-wrap gap-space-xs mb-space-md">
+            <span class="bg-surface-container px-2 py-1 rounded-md text-xs text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs text-secondary">verified</span>
+              اعتماد فوري
+            </span>
+            <span class="bg-surface-container px-2 py-1 rounded-md text-xs text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs text-secondary">badge</span>
+              برقم الجلوس
+            </span>
+            <span class="bg-surface-container px-2 py-1 rounded-md text-xs text-on-surface-variant flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs text-secondary">download</span>
+              تقرير درجات PDF
+            </span>
+          </div>
+
+          <!-- Student CTA -->
+          <button class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary font-bold text-sm rounded-xl shadow-sm flex items-center justify-center gap-2 transition-all active:scale-[0.99] cursor-pointer" onclick="handleStudentEntry()" type="button">
+            <span class="material-symbols-outlined text-lg">search</span>
+            <span>الدخول كطالب / عرض النتائج</span>
+          </button>
+        </article>
+
+        <!-- Card 2: Supervising Teacher Gateway -->
+        <article class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-md flex flex-col justify-between transition-all duration-200 hover:shadow-md relative overflow-hidden border border-surface-container">
+          <div class="absolute top-0 right-0 w-2 h-full bg-primary-container"></div>
+          
+          <div class="flex items-start gap-space-md mb-space-sm">
+            <div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+              <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[11px] bg-primary-fixed-dim/40 text-on-primary-fixed-variant px-2 py-0.5 rounded-full font-bold">بوابة مؤمنة</span>
+                <span class="material-symbols-outlined text-outline text-sm">lock</span>
+              </div>
+              <h3 class="font-headline font-bold text-lg text-primary">بوابة المعلم المشرف</h3>
+              <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                إدارة سجلات الطلاب، رصد وتعديل الدرجات للمواد التسع في فايربيز، وإصدار الشهادات والتقارير الرسمية.
+              </p>
+            </div>
+          </div>
+
+          <!-- PIN Code Section -->
+          <div class="bg-surface-container-low rounded-xl p-space-md mt-space-xs mb-space-md border border-surface-container">
+            <!-- Normal Entry Group (Hidden when locked) -->
+            <div id="pinInputGroup">
+              <div class="flex items-center justify-between mb-space-xs">
+                <label class="text-xs text-primary font-bold flex items-center gap-1">
+                  <span class="material-symbols-outlined text-sm text-secondary">pin</span>
+                  <span>كود الدخول الأمني للمشرف</span>
+                </label>
+                <button class="text-xs text-on-surface-variant hover:text-primary flex items-center gap-1 cursor-pointer transition-colors" id="togglePinVisibilityBtn" onclick="togglePinVisibility()" type="button">
+                  <span class="material-symbols-outlined text-sm" id="pinEyeIcon">visibility</span>
+                  <span id="pinEyeText">إظهار الرمز</span>
+                </button>
+              </div>
+              
+              <div class="flex items-center justify-between mb-space-sm">
+                <p class="text-xs text-on-surface-variant">
+                  أدخل كود المرور السري المكون من 6 أرقام:
+                </p>
+                <span class="text-[11px] text-error bg-error-container/30 px-2 py-0.5 rounded font-bold">متبقي محاولتان فقط</span>
+              </div>
+
+              <!-- 6 Digit Input Inputs -->
+              <div class="flex items-center justify-between gap-1.5 mb-space-xs" dir="ltr" id="pin-container">
+                <input class="pin-box w-10 h-12 text-center text-lg font-bold bg-surface-container-lowest text-primary rounded-lg border border-surface-container shadow-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" data-index="0" inputmode="numeric" maxlength="1" type="password"/>
+                <input class="pin-box w-10 h-12 text-center text-lg font-bold bg-surface-container-lowest text-primary rounded-lg border border-surface-container shadow-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" data-index="1" inputmode="numeric" maxlength="1" type="password"/>
+                <input class="pin-box w-10 h-12 text-center text-lg font-bold bg-surface-container-lowest text-primary rounded-lg border border-surface-container shadow-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" data-index="2" inputmode="numeric" maxlength="1" type="password"/>
+                <input class="pin-box w-10 h-12 text-center text-lg font-bold bg-surface-container-lowest text-primary rounded-lg border border-surface-container shadow-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" data-index="3" inputmode="numeric" maxlength="1" type="password"/>
+                <input class="pin-box w-10 h-12 text-center text-lg font-bold bg-surface-container-lowest text-primary rounded-lg border border-surface-container shadow-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" data-index="4" inputmode="numeric" maxlength="1" type="password"/>
+                <input class="pin-box w-10 h-12 text-center text-lg font-bold bg-surface-container-lowest text-primary rounded-lg border border-surface-container shadow-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary" data-index="5" inputmode="numeric" maxlength="1" type="password"/>
+              </div>
+
+              <!-- Error feedback -->
+              <div class="h-6 flex items-center justify-start text-xs text-error font-bold hidden" id="pin-feedback">
+                <span class="material-symbols-outlined text-xs ml-1">warning</span>
+                <span id="pin-feedback-msg">كود المرور غير صحيح!</span>
+              </div>
+            </div>
+
+            <!-- Lockout Alert Notice (Shown when 2 failed attempts occur) -->
+            <div class="hidden bg-red-50 border-2 border-red-500 rounded-xl p-4 text-center flex flex-col items-center gap-2" id="supervisorLockoutNotice">
+              <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 mb-1">
+                <span class="material-symbols-outlined text-3xl">lock_clock</span>
+              </div>
+              <h4 class="font-headline font-bold text-red-800 text-sm">تم إغلاق وتأمين بوابة المشرف نهائياً</h4>
+              <p class="text-xs text-red-700 leading-relaxed max-w-sm">
+                تم حظر الدخول إلى لوحة المعلم المشرف بعد إدخال كلمة المرور خاطئة مرتين متتاليتين لأسباب أمنية.
+              </p>
+              <div class="mt-1 text-[11px] text-red-900 bg-red-100/80 px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-sm">contact_support</span>
+                <span>يرجى التوجه لإدارة الكنترول بالمدرسة لطلب فك الحظر</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Supervisor Login CTA -->
+          <button class="w-full h-12 bg-secondary hover:bg-secondary/90 text-on-secondary font-bold text-sm rounded-xl shadow-sm flex items-center justify-center gap-2 transition-all active:scale-[0.99] cursor-pointer" id="supervisorSubmitBtn" onclick="verifySupervisorPIN()" type="button">
+            <span class="material-symbols-outlined text-lg">key</span>
+            <span>تسجيل الدخول كمعلم مشرف</span>
+          </button>
+        </article>
+
+      </div>
+
+      <!-- Official Announcements Banner -->
+      <section class="w-full bg-surface-container-lowest rounded-2xl shadow-sm p-space-md mb-space-md border border-surface-container">
+        <div class="flex items-center gap-space-xs mb-space-xs text-primary">
+          <span class="material-symbols-outlined text-lg text-secondary" style="font-variation-settings: 'FILL' 1;">campaign</span>
+          <h3 class="font-headline font-bold text-sm">تنويهات الكنترول والإدارة المدرسية</h3>
+        </div>
+        <div class="space-y-space-xs text-on-surface-variant text-xs">
+          <div class="flex items-start gap-2 bg-surface-container-low p-space-sm rounded-xl border border-surface-container">
+            <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">info</span>
+            <p>تم اعتماد نتائج الفصل الدراسي لطلاب الصف الأول الثانوي بعد التدقيق النهائي لأوراق الإجابات والدرجات العملية ورصدها على السحابة.</p>
+          </div>
+          <div class="flex items-start gap-2 bg-surface-container-low p-space-sm rounded-xl border border-surface-container">
+            <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">contact_support</span>
+            <p>لأي استفسار يخص أرقام الجلوس أو التظلمات، يرجى مراجعة إدارة الكنترول بالمدرسة.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Toast -->
+      <div class="hidden w-full bg-surface-container-highest text-on-surface p-space-sm rounded-xl shadow-md mb-space-sm flex items-center justify-between transition-all" id="notice-toast">
+        <div class="flex items-center gap-space-xs">
+          <span class="material-symbols-outlined text-tertiary-container" id="toast-icon">check_circle</span>
+          <span class="text-xs font-bold" id="toast-message">تم تأكيد الدخول بنجاح!</span>
+        </div>
+        <button class="text-outline hover:text-on-surface" onclick="hideToast()" type="button">
+          <span class="material-symbols-outlined text-sm">close</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full mt-auto py-space-md text-center flex flex-col items-center justify-center gap-1">
+      <p class="text-xs text-on-surface-variant font-medium">صنع المبرمج نضال فريد</p>
+      <p class="text-[11px] text-outline">جميع الحقوق محفوظة © مدرسة أبو مصطفى الثانوية المشتركة</p>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/gateway.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>الشهادة والدرجات | مدرسة أبو مصطفى الثانوية المشتركة</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00236f",
+            "on-primary": "#ffffff",
+            "primary-container": "#1e3a8a",
+            "on-primary-container": "#90a8ff",
+            "primary-fixed": "#dce1ff",
+            "primary-fixed-dim": "#b6c4ff",
+            "on-primary-fixed": "#00164e",
+            "on-primary-fixed-variant": "#264191",
+            "secondary": "#006398",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#5bb8fe",
+            "on-secondary-container": "#00476e",
+            "secondary-fixed": "#cce5ff",
+            "secondary-fixed-dim": "#93ccff",
+            "tertiary": "#00311f",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#004a31",
+            "on-tertiary-container": "#27c38a",
+            "tertiary-fixed": "#6ffbbe",
+            "tertiary-fixed-dim": "#4edea3",
+            "surface": "#f7f9fb",
+            "on-surface": "#191c1e",
+            "surface-dim": "#d8dadc",
+            "surface-bright": "#f7f9fb",
+            "surface-variant": "#e0e3e5",
+            "on-surface-variant": "#444651",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f2f4f6",
+            "surface-container": "#eceef0",
+            "surface-container-high": "#e6e8ea",
+            "surface-container-highest": "#e0e3e5",
+            "outline": "#757682",
+            "outline-variant": "#c5c5d3",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a"
+          },
+          spacing: {
+            "margin": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "headline": ["Cairo", "sans-serif"],
+            "body": ["Tajawal", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] no-print">
+    <div class="h-16 px-margin flex items-center justify-between gap-space-sm max-w-xl mx-auto">
+      <div class="flex items-center gap-space-sm min-w-0">
+        <a href="index.html" class="flex items-center gap-2">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX9Ga7lFmfccPIQIyeYhPY0jCjCjx5nyLJlk-xTJwBeMqdWnH9h4tgI0uUu4SR7uB5wGNJ5eaKYBATdwmlWuIZkNe1XuF8upHSWaX4SSJISXQGzRdyEVDvAfTHqckj9KvADp7e8ZIiBNoNAC_4SX2nVqAjidtS78cE6z4iSX-KEcwitouAGXVDe7gGZdp8q5qZBsnPiiHpYy274aeqhKpFJY6Z4ZSkCrcKEBqAIm87"/>
+          <div class="flex flex-col min-w-0 text-right">
+            <span class="font-headline font-bold text-sm text-primary truncate leading-none mb-0.5">مدرسة أبو مصطفى الثانوية المشتركة</span>
+            <span class="text-xs text-on-surface-variant truncate">بوابة النتائج والدرجات الرسمية</span>
+          </div>
+        </a>
+      </div>
+      <div class="flex items-center gap-space-xs flex-shrink-0">
+        <a href="index.html" class="flex items-center gap-1 text-xs text-primary bg-surface-container-high hover:bg-surface-container-highest px-2.5 py-1 rounded-lg font-bold transition-colors">
+          <span class="material-symbols-outlined text-base">home</span>
+          <span>الرئيسية</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 flex flex-col relative w-full pt-20 pb-10 bg-surface px-margin max-w-xl mx-auto">
+    <div class="flex flex-col w-full gap-space-lg select-none">
+      
+      <!-- Search Form Section -->
+      <section class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-sm border border-surface-container no-print">
+        <div class="flex items-center gap-space-sm mb-space-md">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+            <span class="material-symbols-outlined text-[24px]">manage_search</span>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="font-headline font-bold text-base text-primary leading-tight">استعلام عن نتيجة امتحانات الفصل الدراسي</h2>
+            <span class="text-xs text-on-surface-variant">الصف الأول الثانوي العام - العام الدراسي 2024 / 2025</span>
+          </div>
+        </div>
+
+        <form class="flex flex-col gap-space-md" id="lookup-form">
+          <div class="flex flex-col gap-1">
+            <label class="text-xs font-bold text-on-surface flex items-center justify-between" for="seat-number">
+              <span>رقم الجلوس في الكنترول</span>
+              <span class="text-xs text-secondary font-bold">5 أرقام (جرب: 10452)</span>
+            </label>
+            <div class="relative flex items-center">
+              <input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface text-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all font-mono font-bold" id="seat-number" maxlength="8" placeholder="مثال: 10452" required="" type="text" value="10452"/>
+              <span class="material-symbols-outlined text-outline absolute right-3 pointer-events-none text-[20px]">tag</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label class="text-xs font-bold text-on-surface flex items-center justify-between" for="student-name">
+              <span>اسم الطالب (اختياري)</span>
+              <span class="text-xs text-on-surface-variant font-normal">كما هو مدون باستمارة الامتحانات</span>
+            </label>
+            <div class="relative flex items-center">
+              <input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface text-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="student-name" placeholder="مثال: أحمد محمد علي حسن" type="text" value="أحمد محمد علي حسن"/>
+              <span class="material-symbols-outlined text-outline absolute right-3 pointer-events-none text-[20px]">badge</span>
+            </div>
+          </div>
+
+          <button class="w-full h-12 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline font-bold text-sm flex items-center justify-center gap-2 shadow-md active:scale-[0.99] transition-all cursor-pointer" id="submit-btn" type="submit">
+            <span class="material-symbols-outlined text-[20px]">search</span>
+            <span>عرض النتيجة الرسمية</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- Student Not Found Alert -->
+      <div class="hidden bg-error-container text-on-error-container p-space-md rounded-2xl border border-error/30 flex items-start gap-space-sm" id="student-not-found-alert">
+        <span class="material-symbols-outlined text-error text-[24px] shrink-0 mt-0.5">warning</span>
+        <div class="flex flex-col">
+          <span class="font-headline font-bold text-sm">عفواً، لم يتم العثور على نتيجة مسجلة</span>
+          <p class="text-xs mt-1 leading-relaxed">
+            يرجى التأكد من كتابة رقم الجلوس بصورة صحيحة (أو استخدام أرقام التجربة مثل: 10452 أو 10453 أو 10454)، أو مراجعة إدارة الكنترول بالمدرسة.
+          </p>
+        </div>
+      </div>
+
+      <!-- Result Container with Animated Appearance -->
+      <div class="flex flex-col w-full gap-space-md" id="result-view">
+        
+        <!-- Student Information Banner -->
+        <section class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-sm relative overflow-hidden border border-surface-container">
+          <!-- Decorative watermarked emblem SVG -->
+          <div class="absolute -left-6 -bottom-6 opacity-5 pointer-events-none">
+            <svg class="text-primary" fill="currentColor" height="180" viewBox="0 0 24 24" width="180">
+              <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"></path>
+            </svg>
+          </div>
+          
+          <div class="flex items-start justify-between gap-space-sm pb-space-sm mb-space-sm border-b border-surface-container">
+            <div class="flex items-center gap-space-sm">
+              <div class="w-12 h-12 rounded-xl bg-tertiary-container/10 flex items-center justify-center text-tertiary flex-shrink-0">
+                <span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xs text-secondary font-bold">بيان نجاح رسمي معتمد</span>
+                <h3 class="font-headline font-bold text-lg text-primary" id="cert-student-name">أحمد محمد علي حسن</h3>
+              </div>
+            </div>
+            <div class="flex flex-col items-end">
+              <span class="bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-sm" id="cert-status-badge">
+                <span class="material-symbols-outlined text-sm">celebration</span>
+                <span>ناجح بتفوق</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Quick Bio Meta Grid -->
+          <div class="grid grid-cols-2 gap-space-sm">
+            <div class="bg-surface-container-low p-2.5 rounded-xl flex flex-col border border-surface-container">
+              <span class="text-xs text-on-surface-variant font-medium">رقم الجلوس</span>
+              <span class="font-headline text-base text-primary font-mono font-bold" id="cert-seat-number">10452</span>
+            </div>
+            <div class="bg-surface-container-low p-2.5 rounded-xl flex flex-col border border-surface-container">
+              <span class="text-xs text-on-surface-variant font-medium">المرحلة الدراسية</span>
+              <span class="font-headline text-xs text-on-surface font-bold" id="cert-stage-name">الصف الأول الثانوي (عام)</span>
+            </div>
+            <div class="bg-surface-container-low p-2.5 rounded-xl flex flex-col border border-surface-container">
+              <span class="text-xs text-on-surface-variant font-medium">العام الدراسي</span>
+              <span class="text-xs text-on-surface font-bold">2024 / 2025 م</span>
+            </div>
+            <div class="bg-surface-container-low p-2.5 rounded-xl flex flex-col border border-surface-container">
+              <span class="text-xs text-on-surface-variant font-medium">الموقف الأكاديمي</span>
+              <span class="text-xs text-on-tertiary-container font-bold">منقول للصف الثاني الثانوي</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Subjects Grading Details (Card Table) -->
+        <section class="w-full bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden border border-surface-container">
+          <div class="p-space-md bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+            <div class="flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-primary text-[22px]">format_list_numbered_rtl</span>
+              <h3 class="font-headline font-bold text-sm text-primary">تفاصيل درجات المواد الدراسية</h3>
+            </div>
+            <span class="text-xs text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded font-bold">9 مواد دراسية</span>
+          </div>
+          
+          <!-- Dynamic List of All 9 Subjects from Firebase -->
+          <div class="flex flex-col" id="cert-subjects-list">
+            <!-- Subject 1: Arabic -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">1. اللغة العربية</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">ممتاز</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">46 <span class="text-on-surface-variant text-body-sm font-normal">/ 50</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-on-tertiary-container h-full rounded-full transition-all duration-1000" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 2: Mathematics -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">2. الرياضيات العامة</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">ممتاز</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">55 <span class="text-on-surface-variant text-body-sm font-normal">/ 60</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-on-tertiary-container h-full rounded-full transition-all duration-1000" style="width: 91.6%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 3: Integrated Sciences -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">3. العلوم المتكاملة</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">جيد جداً</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">52 <span class="text-on-surface-variant text-body-sm font-normal">/ 60</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-secondary h-full rounded-full transition-all duration-1000" style="width: 86.6%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 4: Programming -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">4. البرمجة والذكاء الاصطناعي</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">ممتاز</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">38 <span class="text-on-surface-variant text-body-sm font-normal">/ 40</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-on-tertiary-container h-full rounded-full transition-all duration-1000" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 5: Religious Education -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">5. التربية الدينية</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">ممتاز</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">37 <span class="text-on-surface-variant text-body-sm font-normal">/ 40</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-on-tertiary-container h-full rounded-full transition-all duration-1000" style="width: 92.5%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 6: Philosophy -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">6. الفلسفة ومبادئ التفكير</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">جيد جداً</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">35 <span class="text-on-surface-variant text-body-sm font-normal">/ 40</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-secondary h-full rounded-full transition-all duration-1000" style="width: 87.5%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 7: English -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">7. اللغة الإنجليزية</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">ممتاز</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">44 <span class="text-on-surface-variant text-body-sm font-normal">/ 50</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-on-tertiary-container h-full rounded-full transition-all duration-1000" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 8: History -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">8. التاريخ والحضارة</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">جيد جداً</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">36 <span class="text-on-surface-variant text-body-sm font-normal">/ 40</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-secondary h-full rounded-full transition-all duration-1000" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Subject 9: French -->
+            <div class="p-space-md flex flex-col gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  <span class="font-title-md text-title-md text-on-surface font-semibold">9. اللغة الفرنسية (لغة ثانية)</span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <span class="font-label-md text-label-md px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">جيد جداً</span>
+                  <span class="font-title-md text-title-md text-primary font-bold font-mono">36 <span class="text-on-surface-variant text-body-sm font-normal">/ 40</span></span>
+                </div>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+                <div class="bg-secondary h-full rounded-full transition-all duration-1000" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cumulative Total & Highlighted Metric Summary -->
+        <section class="w-full bg-gradient-to-br from-primary via-primary-container to-primary text-on-primary rounded-2xl p-space-md shadow-md flex flex-col gap-space-md">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-[24px] text-primary-fixed">military_tech</span>
+              <span class="font-headline font-bold text-base">المجموع الكلي والتقدير العام</span>
+            </div>
+            <span class="bg-surface-container-lowest text-primary text-xs px-3 py-1 rounded-full font-bold shadow-sm" id="cert-appreciation-badge">
+              ممتاز (مرتفع)
+            </span>
+          </div>
+
+          <!-- Stats Scoreboard Bento -->
+          <div class="grid grid-cols-2 gap-space-sm">
+            <div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-xl p-space-sm flex flex-col items-center justify-center text-center border border-white/10">
+              <span class="text-xs text-primary-fixed mb-1">مجموع الدرجات المحصلة</span>
+              <div class="flex items-baseline gap-1">
+                <span class="font-headline text-2xl font-mono font-bold text-surface-container-lowest" id="cert-total-score">379</span>
+                <span class="text-xs text-primary-fixed">/ 420</span>
+              </div>
+            </div>
+            <div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-xl p-space-sm flex flex-col items-center justify-center text-center border border-white/10">
+              <span class="text-xs text-primary-fixed mb-1">النسبة المئوية التراكمية</span>
+              <div class="flex items-baseline gap-1">
+                <span class="font-headline text-2xl font-mono font-bold text-tertiary-fixed" id="cert-percentage">90.2%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Standing Linear Visualizer -->
+          <div class="flex flex-col gap-1 mt-space-xs">
+            <div class="flex justify-between text-xs text-primary-fixed">
+              <span>مستوى التحصيل الأكاديمي</span>
+              <span class="font-mono">من الحد الأقصى (420)</span>
+            </div>
+            <div class="w-full h-3 bg-surface-container-lowest/20 rounded-full overflow-hidden flex">
+              <div class="bg-tertiary-fixed h-full rounded-full transition-all duration-1000" id="cert-progress-bar" style="width: 90.2%;"></div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs no-print">
+            <button class="flex-1 h-12 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-bold text-xs rounded-xl flex items-center justify-center gap-2 shadow transition-all active:scale-[0.98] cursor-pointer" onclick="printReportCard()" type="button">
+              <span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+              <span>طباعة بيان الدرجات (PDF)</span>
+            </button>
+            <button class="flex-1 h-12 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-surface-container-lowest font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98] cursor-pointer" onclick="resetQuery()" type="button">
+              <span class="material-symbols-outlined text-[20px]">refresh</span>
+              <span>استعلام جديد</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- School Authenticity Seal -->
+        <div class="bg-surface-container-low p-space-sm rounded-2xl flex items-center gap-space-sm border border-surface-container">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary flex-shrink-0">
+            <span class="material-symbols-outlined text-[22px]">verified_user</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-headline font-bold text-xs text-primary leading-tight">مستخرج رسمي معتمد إلكترونياً</span>
+            <span class="text-[11px] text-on-surface-variant">يعتمد هذا الإخطار من كنترول مدرسة أبو مصطفى الثانوية المشتركة للإفادة الرسمية بالدرجات.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full mt-auto py-space-md text-center flex flex-col items-center justify-center gap-1 no-print">
+      <p class="text-xs text-on-surface-variant font-medium">صنع المبرمج نضال فريد</p>
+      <p class="text-[11px] text-outline">جميع الحقوق محفوظة © مدرسة أبو مصطفى الثانوية المشتركة</p>
+    </footer>
+  </main>
+
+  <!-- Script Modules -->
+  <script type="module" src="js/student.js"></script>
+</body>
+</html>
